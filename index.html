@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <figure class="logo">
+      <img src="images/logo.svg" alt="" />
+    </figure>
+    <div class="container">
+      <div class="flex-item-1">
+        <div class="bill">
+          <div class="error-msg">
+            <span class="heads">Bill</span>
+            <span class="heads msg hidden">Can't be zero</span>
+          </div>
+          <!-- <br /> -->
+          <div class="input-wrapper">
+            <img class="icon" src="images/icon-dollar.svg" alt="" />
+            <input id="bill-input" type="number" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="tip-menu">
+          <span class="heads">Select Tip %</span>
+          <br />
+          <div class="tip-btns">
+            <button class="tips" value="5">5%</button>
+            <button class="tips" value="10">10%</button>
+            <button class="tips" value="15">15%</button>
+            <button class="tips" value="25">25%</button>
+            <button class="tips" value="50">50%</button>
+            <div>
+              <button class="custom-btn">Custom</button>
+              <input type="number" class="custom-input hidden" />
+            </div>
+          </div>
+        </div>
+
+        <div class="people-num">
+          <div class="error-msg">
+            <span class="heads">Number of People</span>
+            <span class="heads msg hidden">Can't be zero</span>
+          </div>
+          <!-- <br /> -->
+          <div class="input-wrapper">
+            <img class="icon" src="images/icon-person.svg" alt="" />
+            <input id="people-num" type="number" placeholder="0" />
+          </div>
+        </div>
+      </div>
+
+      <!-- FLEX ITEM 2 -->
+
+      <div class="flex-item-2">
+        <!-- Tip amount -->
+        <div class="totals">
+          <div class="tip-amount">
+            <div class="results">
+              <span class="heads">Tip Amount</span> <br />
+              <span class="sub">/ person</span>
+            </div>
+            <div class="tip-result" id="tip-result">$0.00</div>
+          </div>
+          <!-- Total -->
+          <div class="total-amount">
+            <div class="results">
+              <span class="heads">Total</span> <br />
+              <span class="sub">/ person</span>
+            </div>
+            <div class="total-result" id="total-result">$0.00</div>
+          </div>
+        </div>
+
+        <button type="reset" class="rst-btn" id="reset">RESET</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://social-link-page-delta.vercel.app/" target="_blank"
+        >Oyelude Elijah</a
+      >.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
