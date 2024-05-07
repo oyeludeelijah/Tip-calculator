@@ -24,29 +24,32 @@ peopleNum.addEventListener("input", () => {
   calculateTip();
 });
 
-// // I'll be back for this later.
-//  // buttons.forEach((btn) => {
-// //   btn.addEventListener("click", function () {
-// //     const value = btn.textContent;
-// //     // console.log(value);
-// //     resultNum.textContent = value;
-// //     buttons.forEach((btn) => {
-// //       btn.classList.remove("active");
-// //     });
-// //     btn.classList.add("active");
+//  buttons.forEach((btn) => {
+//   btn.addEventListener("click", function () {
+//     const value = btn.textContent;
+//     // console.log(value);
+//     resultNum.textContent = value;
+//     buttons.forEach((btn) => {
+//       btn.classList.remove("active");
+//     });
+//     btn.classList.add("active");
 
-// //     submitBtn.addEventListener("click", function () {
-// //       container2.classList.remove("hidden");
-// //       container1.classList.add("hidden");
-// //     });
-// //   });
-// // });
+//     submitBtn.addEventListener("click", function () {
+//       container2.classList.remove("hidden");
+//       container1.classList.add("hidden");
+//     });
+//   });
+// });
 
 // Event listener for tip buttons
 tips.forEach((tipBtn) => {
   tipBtn.addEventListener("click", () => {
     tip = parseFloat(tipBtn.value);
     calculateTip();
+    tips.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    tipBtn.classList.add("active");
   });
 });
 

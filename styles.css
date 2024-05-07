@@ -180,10 +180,11 @@ input:focus {
 .tips:hover,
 .custom-btn:hover {
   background-color: var(--Light-grayish-cyan);
+  /* background-color: hsl(183, 70%, 78%); */
   color: var(--Very-dark-cyan);
 }
 
-.tips:active,
+/* .tips:active, */
 .custom-btn:active {
   background-color: var(--Strong-cyan2);
 }
@@ -226,6 +227,11 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.active {
+  background-color: var(--Strong-cyan) !important;
+  color: var(--color-2) !important;
 }
 
 .tip-amount {
